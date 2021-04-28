@@ -2,6 +2,7 @@
 
 
 FCFS (FIRST COME FIRST SERVE):
+
 ⮚ In this scheduling algorithm, a person
 is served according to the queue manner.
 
@@ -17,6 +18,7 @@ similar manner.
 
 
 SEMAPHORES:
+
 ⮚ In computer science, a semaphore is a variable
 or abstract data type used to control access to a
 common resource by multiple processes in
