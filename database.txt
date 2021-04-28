@@ -1,0 +1,11 @@
+create database movie;
+
+use movie;
+
+create table login(username varchar(20),password varchar(20));
+
+insert into login values("user2","user2");
+insert into login values("user1","user1");
+insert into login values("admin","admin");
+
+exit;

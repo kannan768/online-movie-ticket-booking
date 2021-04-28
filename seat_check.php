@@ -1,0 +1,22 @@
+<?php
+session_start();
+$default=$_SESSION['avail_seat'];
+if($_SESSION['priority']==1)
+$_SESSION['avail_seat']=$_SESSION['avail_seat']-$_SESSION['asea'];
+else
+$_SESSION['avail_seat']=$_SESSION['avail_seat']-$_SESSION['sea'];
+if($_SESSION['avail_seat']<0)
+{$_SESSION['avail_seat']=$default;
+   if($_SESSION['priority']==1) 
+       header('location:auntransaction.php');
+    else 
+       header('location:untransaction.php');
+           
+}
+else
+{
+ if($_SESSION['priority']==0)
+  header('location:transaction.php');
+else
+  header('location:atransaction.php');
+}?>
